@@ -31,9 +31,20 @@ pipeline {
             }
         }
     }
-}
+    
 post {
     always {
-      echo "The Pipeline success"
+      echo "Always display this message"
     }
- }                                                                
+     failure {
+      echo "Job failed"
+    }
+     success {
+      echo "succesful run"
+    }
+     unstable {
+      echo "The job is unstable"
+    }
+ }
+}
+
