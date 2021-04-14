@@ -34,6 +34,6 @@ pipeline {
 }
 post {
     always {
-      mail to: team@example.com, subject: ‘The Pipeline success :(‘
+      echo "The Pipeline success"
     }
  }                                                                
